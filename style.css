@@ -1,0 +1,208 @@
+:root{
+    --det-color: #F2F5DC;
+    --sec-color: #5EC3DC;
+}
+
+/* * NAVBAR */
+
+.navbar{
+    background-color: var(--det-color) !important;
+}
+
+.navbar{
+    --bs-navbar-toggler-border-color: #D09E51;
+}
+
+.color_toggle{
+    color: #D09E51;
+}
+
+.img_zoom{
+    transition: 0.3s;
+}
+
+.img_masthead{
+    width: 500px;
+}
+
+.img_zoom:hover{
+    transform: scale(1.2);
+}
+
+.link_nav{
+    color: #D09E51;
+    transition: 0.3s;
+}
+
+.link_nav:hover{
+    color: #479E3E;
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 992px) {
+    .link_nav:hover{
+        transform: scale(1);
+    }
+    .img_masthead{
+        width: 350px;
+    }
+    .testo_head{
+        font-size: 10px;
+        color: #D09E51;
+    }
+    .img_programma{
+        width: 400px !important;
+    }
+    .btn2{
+        padding: 5px 10px !important;
+    }
+}
+
+
+
+/* ^ PAGINA HOME */
+
+/* HEADER */
+.masthead {
+    height: 89vh;
+    min-height: 400px;
+    background-color: var(--det-color);
+}
+
+.testo_head{
+    color: #05A54F;
+}
+
+
+.testo_home{
+    color: #05A54F;
+}
+
+.foto_rotonde1{
+    width: 600px;
+    height: 400px;
+}
+
+.lista_home::marker{
+    color: #05A54F;
+}
+
+@media only screen and (max-width: 768px) {
+    .foto_rotonde1{
+        width: 300px;
+        height: 300px;
+    }
+    .scritta_head{
+        font-size: 50px;
+    }
+}
+
+/* SEZIONE SINDACO */
+.sez_sindaco{
+    height: 500px;
+}
+
+/* SEZIONE FOOTER */
+.footer_border{
+    background-color: var(--det-color);
+}
+
+.link_footer{
+    color: #D09E51 !important;
+}
+
+
+
+/* ~ PAGINA PROGRAMMA */
+
+.titolo2{
+    font-size: 50px;
+    color: #D09E51;
+}
+
+.testo2{
+    color: #05A54F;
+}
+
+.btn{
+    background-color: #D09E51;
+    padding: 20px 40px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: var(--det-color);
+    transform: scale(1.2);
+}
+
+
+
+/* ? PAGINA CANDIDATI */
+
+.btn2{
+    background-color: #05A54F;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.nomi_candidati{
+    color: var(--det-color);
+}
+
+td{
+    height: 60px !important;
+}
+
+@media (max-width: 576px) {
+    td{
+        height: 100px !important;
+    }
+
+    tr{
+        height: 100px;
+    }
+  }
+
+
+
+/* & BOTTONE BACK TO TOP */
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
+    z-index: 99;
+    background-color: #D09E51;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transition: 0.4s;
+    opacity: 0; 
+    transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#scrollBtn.show {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+#scrollBtn:hover {
+    background-color: #05A54F;
+}
